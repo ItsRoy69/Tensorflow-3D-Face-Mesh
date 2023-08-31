@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3D Face Mesh</title>
+    <!-- tensorFlow.js and faceMesh -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@tensorflow-models/facemesh"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta2/css/bootstrap.min.css"
+        integrity="sha384-pzjw5f+ua9m1dScQWAYAH89pTI8wC5tARFOZfJ/ifPb1EUG5w1al9U7hstFdQb" crossorigin="anonymous">
+    <!-- minified plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row text-center" style="display: flex;">
+            <div>
+                <video autoplay playsinline muted id="webcam" width="300" height="400"></video>
+                <hr>
+                <button class="btn btn-info" id="capture">Capture</button>
+                <button class="btn btn-info" id="stop">Stop</button>
+            </div>
+            <div>
+                <div id="plot" style="width: 500px; height: 600px;"></div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta2/js/bootstrap.min.js"
+        integrity="sha384-pzjw5f+ua9m1dScQWAYAH89pTI8wC5tARFOZfJ/ifPb1EUG5w1al9U7hstFdQb"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
